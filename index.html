@@ -7,5 +7,40 @@
     <link rel="stylesheet" href="./style/style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header id="worldCup-header">
+      <!-- 월드컵 로고 -->
+      <div class="worldCup-Logo">
+        <img src="./img/logo.png" />
+      </div>
+      <div>
+        <h1>2022 World Cup</h1>
+      </div>
+      <div>
+        <form>
+          <input type="text" placeholder="닉네임을 입력해주세요." />
+          <input type="submit" value="로그인" />
+        </form>
+      </div>
+    </header>
+    <!-- 월드컵 메인 -->
+    <div class="worldCup-main">
+      <!-- 현재시각 -->
+      <div class="clock">
+        <h2>00:00:00</h2>
+      </div>
+      <!-- 월드컵 정보 -->
+      <div class="worldCup-info"></div>
+      <!-- 월드컵 날씨 & 위치-->
+      <div class="worldCup-weather"></div>
+    </div>
+    <!-- 월드컵 염원 -->
+    <div class="worldCup-todo">
+      <h2>월드컵 염원을 적어주세요.</h2>
+      <form><input type="text" placeholder="월드컵 염원을 적어주세요." /></form>
+      <ul id="todo-list"></ul>
+    </div>
+  </body>
+  <script src="./js/clock.js"></script>
+  <script src="./js/todo.js"></script>
 </html>
