@@ -1,17 +1,30 @@
 *{
     margin: 0;
-    padding: 0 5px;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
     font-family: -apple-sys tem, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-} 
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    border-radius: 40px;
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 5px;
+}
 
 #worldCup-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #FAE103;
+    padding: 0 10px;
 }
 
 #worldCup-header div{
@@ -32,3 +45,106 @@ body{
     width: 100px;
     height: 100px;
 }
+
+.hidden{
+    display: none;
+}
+
+.worldCup-body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.worldCup-body img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}
+#date_weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#date{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 40px;
+    margin: 50px 0;
+}
+
+.date span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weather{
+    background-color: #fff;
+    border-radius: 40px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.worldCup-todo{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.worldCuptodo-form{
+    margin-bottom: 20px;
+}
+
+.worldCup-todo input{
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+}
+
+#worldCuptodo-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+#worldCuptodo-list li span{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#worldCuptodo-list li button{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 5px;
+}
+

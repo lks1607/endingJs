@@ -17,30 +17,41 @@
         <h1>2022 World Cup</h1>
       </div>
       <div>
-        <form>
+        <form id="login-form" class="hidden">
           <input type="text" placeholder="닉네임을 입력해주세요." />
           <input type="submit" value="로그인" />
         </form>
+        <span id="greeting" class="hidden"></span>
       </div>
     </header>
-    <!-- 월드컵 메인 -->
-    <div class="worldCup-main">
+    <div class="worldCup-body">
       <!-- 현재시각 -->
-      <div class="clock">
-        <h2>00:00:00</h2>
+      <div id="date_weather">
+        <div id="date">
+          <span>현재시각</span>
+          <span class="days"></span>
+          <span class="clock"> 00:00:00</span>
+        </div>
+        <!-- 현재 날씨 & 위치-->
+        <div id="weather">
+          <span>현재 날씨</span>
+          <span class="weather"></span>
+          <span class="city"></span>
+        </div>
       </div>
-      <!-- 월드컵 정보 -->
-      <div class="worldCup-info"></div>
-      <!-- 월드컵 날씨 & 위치-->
-      <div class="worldCup-weather"></div>
-    </div>
-    <!-- 월드컵 염원 -->
-    <div class="worldCup-todo">
-      <h2>월드컵 염원을 적어주세요.</h2>
-      <form><input type="text" placeholder="월드컵 염원을 적어주세요." /></form>
-      <ul id="todo-list"></ul>
+      <!-- 월드컵 염원 -->
+      <div class="worldCup-todo">
+        <h2>월드컵 염원을 적어주세요.</h2>
+        <form class="worldCuptodo-form">
+          <input type="text" placeholder="월드컵 염원을 적어주세요." />
+        </form>
+        <ul id="worldCuptodo-list"></ul>
+      </div>
     </div>
   </body>
   <script src="./js/clock.js"></script>
   <script src="./js/todo.js"></script>
+  <script src="./js/greeting.js"></script>
+  <script src="./js/bgimg.js"></script>
+  <script src="./js/weather.js"></script>
 </html>
